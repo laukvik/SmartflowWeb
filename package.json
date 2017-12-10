@@ -2,7 +2,7 @@
   "name": "smartflow-web",
   "version": "0.1.1",
   "description": "Web application showcasing the benefits of using Smartflow",
-  "main": "src/app.js",
+  "main": "server.js",
   "private": true,
   "scripts": {
     "build": "webpack",
@@ -12,7 +12,7 @@
     "watch": "webpack --watch ./src/app.js ./dist/bundle.js",
     "start2": "webpack-dev-server --content-base dist/ ./src/app.js --watch",
     "postinstall": "webpack-dev-server --config ./webpack.prod.config.js --progress --colors  --content-base dist/ --watch",
-    "start": "webpack-dev-server",
+    "start": "server",
     "prod": "NODE_ENV=production node server.js"
   },
   "watch": {
