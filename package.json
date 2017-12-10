@@ -10,7 +10,8 @@
     "serve": "webpack-dev-server --progress --colors  --content-base dist/ --watch",
     "watch2": "webpack --watch --devtool source-map ./src/app.js",
     "watch": "webpack --watch ./src/app.js ./dist/bundle.js",
-    "start": "webpack-dev-server --content-base dist/ ./src/app.js --watch"
+    "start": "webpack-dev-server --content-base dist/ ./src/app.js --watch",
+    "postinstall": "webpack-dev-server --progress --colors  --content-base dist/ --watch"
   },
   "watch": {
     "test": "{src}/*.js"

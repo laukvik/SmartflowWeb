@@ -1,6 +1,4 @@
 import {View} from "smartflow";
-
-import {FindMoviesAction} from "../actions/FindMoviesAction";
 import {Card} from "smartflow";
 import {BadgeShape, BadgeStyle, Button, ButtonSize, ButtonStyle, Outline} from "smartflow";
 import {Items} from "smartflow";
