@@ -1,4 +1,5 @@
-const path = require('path');
+var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
     entry: './src/app.js',
@@ -6,17 +7,13 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
-    module: {
-      rules: [
-           {
-             test: /\.css$/,
-             use: [
-               'style-loader',
-               'css-loader'
-             ]
-        }
-      ]
-    }
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': '"production"'
+            }
+        })
+    ]
 };
 
 // "var" | "assign" | "this" | "window" | "global" | "commonjs" | "commonjs2" | "commonjs-module" | "amd" | "umd" | "umd2" | "jsonp"
