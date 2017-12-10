@@ -5,18 +5,8 @@
   "main": "server.js",
   "private": true,
   "scripts": {
-    "build": "webpack",
-    "babel": "babel src -d dist",
-    "serve": "webpack-dev-server --progress --colors  --content-base dist/ --watch",
-    "watch2": "webpack --watch --devtool source-map ./src/app.js",
-    "watch": "webpack --watch ./src/app.js ./dist/bundle.js",
-    "start2": "webpack-dev-server --content-base dist/ ./src/app.js --watch",
-    "postinstall": "webpack-dev-server --config ./webpack.prod.config.js --progress --colors  --content-base dist/ --watch",
-    "start": "server",
-    "prod": "NODE_ENV=production node server.js"
-  },
-  "watch": {
-    "test": "{src}/*.js"
+    "postinstall": "webpack",
+    "start": "server"
   },
   "dependencies": {
     "babel-cli": "6.26.0",
