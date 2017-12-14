@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "postinstall": "webpack",
-    "start": "server"
+    "start": "server",
+    "watch": "webpack-dev-server --content-base dist/ --progress --colors --watch --open"
   },
   "dependencies": {
     "babel-cli": "6.26.0",

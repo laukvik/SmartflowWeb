@@ -58,7 +58,7 @@ export class ItemsExamplesView extends View {
   }
 
   viewInitialized() {
-    // this.runAction(new FindMoviesAction());
+    this.runAction(new FindMoviesAction());
   }
 
 }

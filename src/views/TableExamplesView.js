@@ -36,14 +36,7 @@ export class TableExamplesView extends View {
               "label": "Genre",
               "key": "genres"
             },
-            {
-              "label": "Duration",
-              "key": "duration",
-              "component": {
-                "type": Duration,
-                "value": "{duration}"
-              }
-            },
+
             {
               "label": "Year",
               "key": "year"
